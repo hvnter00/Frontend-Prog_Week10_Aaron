@@ -10,6 +10,8 @@
         body {
             background-color: #fafcfc; 
             color: #ffffff; 
+            margin: 0;
+            padding: 0;
         }
         .navbar {
             background-color: #264d40; 
@@ -30,9 +32,6 @@
         }
         .btn-custom:hover {
             background-color: #3aa27d; 
-        }
-        .content-section {
-            padding: 60px 20px;
         }
         h2, h1 {
             color: #0b0b0b; 
@@ -73,11 +72,16 @@
             background-color: #767676; 
             border-radius: 3px; 
         }
-
+        [id]:before { 
+            content: '';
+            display: block;
+            height: 70px; 
+            margin-top: -70px;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand logo-style" href="#">Minimal Hub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,20 +93,17 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#S2">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Button 3</a>
+                        <a class="nav-link" href="#S3">Minimalist 101</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <br>
-    <br>
-
-    <div class="container content-section">
+    
+    <div class="container custom-container py-5" id="S1">
         <div class="text-center">
             <h1 class="logo-style">Hi, Minimalist!</h1>
             <p class="lead">Welcome to Minimal Hub</p>
@@ -111,19 +112,19 @@
         <div id="lifestyleCarousel" class="carousel slide my-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="banner1.jpg" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 1">
+                    <img src="images/banner1.jpg" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 1">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="text-muted text-style">Minimal Home Interior Design</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="banner2.png" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 2">
+                    <img src="images/banner2.png" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 2">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="text-muted text-style">Capsule Wardrobe</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="banner3.png" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 3">
+                    <img src="images/banner3.png" class="d-block w-100 img-fluid rounded" alt="Lifestyle Image 3">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="text-muted text-style">Tech EDC</p>
                     </div>
@@ -139,9 +140,10 @@
             </button>
         </div>
          
+        <br>
 
-        <div class="mt-5">
-            <h2>Why Minimal?</h2>
+        <div class="mt-5" id="#S2">
+            <h2 id="S2">Why Minimal?</h2>
             <p>While the practice of minimalism will look different to different people, the benefits are the same. 
                 Adopting a minimalist mindset can improve your stress levels, sleep, mental and physical health, increase happiness and well-being, 
                 reduce your environmental impact, and also save you time, energy, and money. Maybe most importantly though, minimalism can bring 
@@ -156,6 +158,90 @@
                 clutter-free environment by regularly assessing your belongings, and focus on experiences rather than material possessions. 
                 Remember that minimalism isn't about deprivation but about making room for what truly matters – 
                 whether that's relationships, hobbies, personal growth, or simply peace of mind – while reducing the mental and physical burden of excess.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="logo-style" id="S3">Minimalism 101</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <a href="https://youtu.be/tUefaOw9VKg?si=w01WxTLXwuwX-mmq" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/thumb1.jpg" class="card-img-top img-fluid" alt="Thumbnail 1">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 1</h5>
+                            <p class="card-text">Intro to Minimalism</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://youtu.be/Sa7cgPILItQ?si=mX814ptK52O81U4L" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/banner2.png" class="card-img-top img-fluid" alt="Thumbnail 2">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 2</h5>
+                            <p class="card-text">Why Minimalism</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://youtu.be/3INFBvKbLvs?si=w2Vm0ZvQdKc9Rnng" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/thumb3.jpg" class="card-img-top img-fluid" alt="Thumbnail 3">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 3</h5>
+                            <p class="card-text">The Problem with Minimalism</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://youtu.be/y-TPFKTnG_4?si=ixfvYmiAFSDNtfwz" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/thumb4.jpg" class="card-img-top img-fluid" alt="Thumbnail 4">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 4</h5>
+                            <p class="card-text">Capsule Wardrobe</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://youtu.be/7lIPlhC6Rug?si=6625Nk2LZvLEZB6G" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/thumb5.jpg" class="card-img-top img-fluid" alt="Thumbnail 5">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 5</h5>
+                            <p class="card-text">Minimal Interior Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://youtu.be/2Omv2imo6kY?si=r-b9ijo0SlVqPYtt" class="text-decoration-none">
+                    <div class="card">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/thumb6.jpg" class="card-img-top img-fluid" alt="Thumbnail 6">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Course 6</h5>
+                            <p class="card-text">Minimal EDC</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
