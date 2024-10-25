@@ -45,7 +45,7 @@
             height: 30px;
         }
         #lifestyleCarousel .carousel-item {
-            height: 400px; 
+            height: 350px; 
         }
         #lifestyleCarousel .carousel-item img {
             object-fit: cover; 
@@ -78,6 +78,19 @@
             height: 70px; 
             margin-top: -70px;
         }
+        .thumbhover{
+            transition: 0.3s ease-in-out;
+        }
+        .thumbhover:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 3px 5px #333,0 5px 7px #0e0e0e;
+        }
+        .about-bg{
+            background-color: #333;
+        }
+        .paragraph{
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +110,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#S3">Minimalist 101</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#S4">Join Us</a>
                     </li>
                 </ul>
             </div>
@@ -139,19 +155,20 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-         
-        <br>
+    </div>
 
-        <div class="mt-5" id="#S2">
-            <h2 id="S2">Why Minimal?</h2>
-            <p>While the practice of minimalism will look different to different people, the benefits are the same. 
+    <div class="container-fluid about-bg">
+    <div class="container py-5">
+        <div id="#S2">
+            <h2 class="paragraph" id="S2">Why Minimal?</h2>
+            <p class="paragraph">While the practice of minimalism will look different to different people, the benefits are the same. 
                 Adopting a minimalist mindset can improve your stress levels, sleep, mental and physical health, increase happiness and well-being, 
                 reduce your environmental impact, and also save you time, energy, and money. Maybe most importantly though, minimalism can bring 
                 awareness to what adds value to your life, and help you let go of what doesn’t.</p>
         </div>
-        <div class="mt-4">
-            <h2>How to be Minimal?</h2>
-            <p>A minimalist lifestyle focuses on intentionally living with less by keeping only what adds genuine value to your life while eliminating 
+        <div class="mt-3">
+            <h2 class="paragraph">How to be Minimal?</h2>
+            <p class="paragraph">A minimalist lifestyle focuses on intentionally living with less by keeping only what adds genuine value to your life while eliminating 
                 excess possessions, commitments, and distractions. Start by decluttering your space using the "one in, one out" rule and questioning each 
                 purchase with "Do I really need this?" Adopt a capsule wardrobe with versatile pieces, digitize documents and photos, unsubscribe from unnecessary 
                 emails and social media, and learn to say "no" to commitments that don't align with your priorities. Choose quality over quantity, maintain a 
@@ -159,12 +176,15 @@
                 Remember that minimalism isn't about deprivation but about making room for what truly matters – 
                 whether that's relationships, hobbies, personal growth, or simply peace of mind – while reducing the mental and physical burden of excess.</p>
         </div>
+        </div>
+    </div>
+
     </div>
 
     <div class="container my-5">
         <h2 class="logo-style" id="S3">Minimalism 101</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/tUefaOw9VKg?si=w01WxTLXwuwX-mmq" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -177,7 +197,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/Sa7cgPILItQ?si=mX814ptK52O81U4L" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -190,7 +210,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/3INFBvKbLvs?si=w2Vm0ZvQdKc9Rnng" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -203,7 +223,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/y-TPFKTnG_4?si=ixfvYmiAFSDNtfwz" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -216,7 +236,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/7lIPlhC6Rug?si=6625Nk2LZvLEZB6G" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -229,7 +249,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col thumbhover">
                 <a href="https://youtu.be/2Omv2imo6kY?si=r-b9ijo0SlVqPYtt" class="text-decoration-none">
                     <div class="card">
                         <div class="ratio ratio-16x9">
@@ -245,7 +265,7 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="S4">
         <div class="subscribe-box text-center">
             <h3>Be a minimalist!</h3>
             <form class="d-flex justify-content-center">
